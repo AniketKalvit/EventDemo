@@ -36,6 +36,7 @@ namespace FirstDemoNewBatch
         static void Main(string[] args)
         {
             Student s1 = new Student();
+            //event and delegate binding
             s1.Fail += new Mydel(FailMsg);
             s1.Distinction += new Mydel(DistinctionMsg);
             s1.AcceptMarks(64);
